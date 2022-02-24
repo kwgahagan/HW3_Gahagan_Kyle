@@ -1,0 +1,151 @@
+location,ranking,quality,value
+"Boulder, CO",1,8.2,6
+"Raleigh & Durham, NC",2,6.9,7.7
+"Huntsville, AL",3,7,8.7
+"Fayetteville, AR",4,7.2,8.1
+"Austin, TX",5,7,6.5
+"Colorado Springs, CO",6,6.7,6.4
+"Naples, FL",7,7.7,4.7
+"Portland, ME",8,7.4,6.6
+"Sarasota, FL",9,7.3,5.5
+"Portland, OR",10,6.8,6
+"Boise, ID",11,7.3,7.1
+"Ann Arbor, MI",12,8.4,7
+"Des Moines, IA",13,6.7,8.3
+"Denver, CO",14,6.7,6.4
+"San Francisco, CA",15,6.8,5.1
+"Madison, WI",16,7.6,7
+"Fort Collins, CO",17,7.4,6
+"Melbourne, FL",18,7.5,6.2
+"Seattle, WA",19,6.5,5.8
+"Charlotte, NC",20,6,7.5
+"Green Bay, WI",21,7.3,8.2
+"Jacksonville, FL",22,6.8,6.3
+"Salt Lake City, UT",23,7.1,7.3
+"Spartanburg, SC",24,6.5,7.8
+"Omaha, NE",25,6.8,7.9
+"Pensacola, FL",26,6.6,6.6
+"Minneapolis-St. Paul, MN",27,6.8,7.6
+"Washington, DC",28,6.8,6.5
+"Lincoln, NE",29,6.9,7.6
+"Nashville, TN",30,6,7.2
+"Boston, MA",31,7.1,5.6
+"Tampa, FL",32,7.1,5.7
+"Lexington-Fayette, KY",33,6.9,7.8
+"Grand Rapids, MI",34,7.4,8.2
+"Myrtle Beach, SC",35,6,6
+"San Jose, CA",36,7.6,5.4
+"Dallas-Fort Worth, TX",37,6.4,6.8
+"Greenville, SC",38,6.3,7.9
+"Houston, TX",39,6,6.7
+"Phoenix, AZ",40,6.1,6.6
+"Knoxville, TN",41,6,7.6
+"Charleston, SC",42,6,6.2
+"Fort Myers, FL",43,6.8,5.2
+"Cincinnati, OH",44,6.6,8
+"Albany, NY",45,6.8,7.3
+"Winston-Salem, NC",46,6.7,7.6
+"Port St. Lucie, FL",47,6.5,5.1
+"Asheville, NC",48,7,6.4
+"Chattanooga, TN",49,5.8,7.5
+"Richmond, VA",50,6.1,7
+"Kalamazoo, MI",51,7,7.9
+"Hickory, NC",52,6.5,8.3
+"Hartford, CT",53,7.4,6.4
+"Columbia, SC",54,5.9,7.3
+"Atlanta, GA",55,5.9,6.9
+"Reno, NV",56,7.3,6.3
+"Kansas City, MO",57,6,7.7
+"Ocala, FL",58,6.6,6
+"Columbus, OH",59,6.3,7.5
+"Orlando, FL",60,7,5.2
+"Harrisburg, PA",61,6.9,7.4
+"Salem, OR",62,6.7,6
+"Syracuse, NY",63,7.1,7.7
+"Lansing, MI",64,6.8,7.5
+"Eugene, OR",65,6.9,4.7
+"Indianapolis, IN",66,5.8,8.1
+"Manchester, NH",67,7.1,6.3
+"Oklahoma City, OK",68,6.1,7.4
+"Daytona Beach, FL",69,6.6,4.8
+"Buffalo, NY",70,6.8,7.8
+"Pittsburgh, PA",71,6.4,8.1
+"Rochester, NY",72,7.3,7.1
+"Fort Wayne, IN",73,6,8.6
+"Lancaster, PA",74,7.2,6.7
+"San Antonio, TX",75,6.2,6.5
+"Tallahassee, FL",76,7.4,5.5
+"Louisville, KY",77,5.8,7.8
+"Spokane, WA",78,6.5,6.4
+"Springfield, MO",79,6,7.2
+"Lakeland, FL",80,6.4,6
+"Tucson, AZ",81,6.5,6.4
+"Augusta, GA",82,6.2,6.9
+"Worcester, MA",83,7.1,6.5
+"Savannah, GA",84,6.2,6.2
+"Dayton, OH",85,6.3,7.7
+"Quad Cities, IA-IL (Davenport-Bettendorf, IA & Moline-Rock Island, IL)",86,6.4,8.4
+"Peoria, IL",87,6.7,8.1
+"South Bend, IN",88,6.2,8.2
+"Tulsa, OK",89,5.7,7.6
+"Anchorage, AK",90,6.7,6.6
+"Birmingham, AL",91,6.1,7.4
+"Milwaukee, WI",92,6.4,6.9
+"Little Rock, AR",93,6,7.6
+"Greensboro, NC",94,6.1,7.2
+"Salisbury, MD",95,6.8,6.1
+"York, PA",96,6.3,7.1
+"San Diego, CA",97,7.4,3.5
+"Sacramento, CA",98,6.6,5.1
+"St. Louis, MO",99,5.4,7.7
+"Baltimore, MD",100,5.8,6.7
+"Reading, PA",101,7,6.9
+"Chicago, IL",102,6.3,6.1
+"Wichita, KS",103,6.3,7.5
+"Cleveland, OH",104,6,7.5
+"Virginia Beach, VA",105,6.1,5.7
+"Providence, RI",106,6.7,6
+"Baton Rouge, LA",107,5.6,7.7
+"Allentown, PA",108,6.6,6.4
+"Springfield, MA",109,7,5.7
+"Scranton, PA",110,6.7,7.3
+"New Haven, CT",111,6.8,5.3
+"Philadelphia, PA",112,6.1,6.2
+"Honolulu, HI",113,6.6,3.9
+"Killeen, TX",114,5.7,6.6
+"Santa Barbara, CA",115,7.5,3.5
+"Toledo, OH",116,6.3,7.7
+"Trenton, NJ",117,6.5,5.3
+"New York City, NY",118,6.6,3.8
+"Huntington, WV & Ashland, KY-OH",119,6.4,7.2
+"Albuquerque, NM",120,6.1,6.2
+"Santa Rosa, CA",121,7.4,4.2
+"Montgomery, AL",122,5.9,7
+"Lafayette, LA",123,5.7,7.5
+"Beaumont, TX",124,5.5,7.6
+"Youngstown, OH",125,6.3,7.8
+"Los Angeles, CA",126,6.5,3.3
+"Detroit, MI",127,5.9,7.4
+"Miami, FL",128,7.1,2.8
+"Corpus Christi, TX",129,5.9,6
+"Jackson, MS",130,5.4,7.2
+"El Paso, TX",131,6.7,5.6
+"Mobile, AL",132,6,6.3
+"Rockford, IL",133,5.8,7.4
+"Gulfport-Biloxi, MS",134,5.7,6.3
+"Vallejo & Fairfield, CA",135,5.8,4.6
+"Fresno, CA",136,6.2,4.7
+"Las Vegas, NV",137,6.4,5.4
+"New Orleans, LA",138,5.8,5.4
+"McAllen, TX",139,7.1,5.4
+"Brownsville, TX",140,7.2,5.4
+"Salinas, CA",141,7.2,3.6
+"Fayetteville, NC",142,5.5,5.7
+"Memphis, TN",143,4.1,6.2
+"Flint, MI",144,4.9,7
+"Shreveport, LA",145,5.4,6.1
+"Modesto, CA",146,5.8,4.8
+"Stockton, CA",147,5.1,4.8
+"Bakersfield, CA",148,5.2,5.1
+"Visalia, CA",149,6.4,4.5
+"San Juan, PR",150,2.8,2.5

@@ -1,0 +1,80 @@
+---
+title: "STAA 566 Assignment 3"
+author: "Kyle Gahagan"
+output: html_document
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+---
+Where are the best places to live in the United States? That is the answer U.S. News answers every year in their 150 Best Places to Live in the U.S. rankings. I have followed the rankings for the last few years, but I always wanted to visualize where they are in the country. To do this, I used the 2021-2022 rankings at the following link: 
+
+https://realestate.usnews.com/places/rankings/best-places-to-live. 
+
+Using the Google Chrome extension Instant Data Scraper, I scraped the location, ranking, quality of life, and value from the top 150 ranked places into a csv called best_places.csv. Below I will load the appropriate packages for loading and wrangling the csv and then add in the latitude and longitude for each location. In order to do this for each location, we will need to use the geocode function from the ggmap package. This requires a Google Maps API. For instructions on how to create and integrate this API through ggmap, please see the following link:
+
+https://cran.r-project.org/web/packages/ggmap/readme/README.html.
+
+```{r ,message = FALSE, warning = FALSE}
+# Load necessary packages for data wrangling
+library(tidyverse)
+library(ggmap)
+
+# Register your Google API key. This is commented out and my key name is removed
+# register_google(key = "", write = TRUE)
+
+# Load best_places csv
+best_places <- read_csv("best_places.csv")
+
+# Create two vectors for lat and long based off location in csv
+lat_long <- geocode(best_places$location)
+
+# Append lat and long columns to best_places csv
+best_places <- data.frame(cbind(best_places, lat_long))
+```
+
+Now that we have our data, we first need to create formatting functions for labels, colors, and icons. After that we can use leaflet functions to properly layer and label the output. 
+
+```{r}
+# Load leaflet package for interactive mapping
+library(leaflet)
+
+labs <- lapply(seq(nrow(best_places)), function(i) {
+  paste0(as.character(best_places[i, "location"]), '<br>',
+         "", "US News Ranking: ", as.character(best_places[i, "ranking"]), '<br>', 
+         "", "Quality of Life Rating (1-10): ", as.character(best_places[i, "quality"]), '<br>', 
+         "", "Value Rating (1-10): ", as.character(best_places[i, "value"]), '<br>') 
+})
+
+# Function to assign colors
+make_color <- function(x) {
+  sapply(x$ranking, function(y) {
+    if (y <= 50) {
+      "green"
+    } else if (y <= 100) {
+      "orange"
+    } else {
+      "red"
+    } })
+}
+
+# Create icon format
+icons <- awesomeIcons(
+  icon = "ios-close",
+  iconColor = "black",
+  library = "fa",   
+  text = best_places$ranking, 
+  markerColor = make_color(best_places)
+)
+
+# Create interactive map using leaflet with layers and markers
+best_places %>% 
+  leaflet() %>%
+  addProviderTiles(providers$OpenStreetMap, group = "Open Street") %>%
+  addProviderTiles(providers$Esri.WorldStreetMap, group = "Esri World Street") %>%
+  addLayersControl(baseGroups = c("Open Street", "Esri World Street")) %>%
+  addAwesomeMarkers(~lon, ~lat, label = ~ lapply(labs, htmltools::HTML),
+                    icon = icons)
+```
+
